@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_authors}"
+  ],
+  "contact": {
+    "issues": "https://github.com/evailcodes/ChainTogether/issues"
+  },
+  "license": "${mod_license}",
+  "icon": "assets/chaintogether/textures/item/chain_icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.evailcodes.chaintogether.ChainTogether"
+    ],
+    "client": [
+      "com.evailcodes.chaintogether.client.ChainClient"
+    ]
+  },
+  "mixins": [
+    "chaintogether.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
